@@ -5,7 +5,7 @@ A simple full-stack URL shortener app built with React (frontend) and Node.js + 
 
 ---
 ## Live Here
-[URL Shortener](https://url-shortener-p6fm.onrender.com/admin)
+[URL Shortener](https://url-shortener-p6fm.onrender.com)
 
 ## Features
 
