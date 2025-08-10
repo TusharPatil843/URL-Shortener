@@ -24,7 +24,8 @@ const UrlShortenerForm = () => {
     
     console.log('Response data:', res.data);  // <-- Add this here
     
-    setShortUrl(res.data.shortUrl);  // or res.data.shortCode depending on what you get
+    setShortUrl(`${apiUrl}/${res.data.shortCode}`);
+  // or res.data.shortCode depending on what you get
   } catch (err) {
     console.error(err);
     setError(err.response?.data?.error || 'Something went wrong');
