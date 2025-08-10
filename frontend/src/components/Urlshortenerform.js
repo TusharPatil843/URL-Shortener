@@ -21,7 +21,9 @@ const UrlShortenerForm = () => {
       setCopied(false);
 
       const res = await axios.post(`${apiUrl}/api/shorten`, { originalUrl });
-      setShortUrl(res.data.shortUrl);
+const shortCode = res.data.shortCode; // assuming backend sends shortCode
+setShortUrl(`${apiUrl}/${shortCode}`);
+
     } catch (err) {
       console.error(err);
       setError(err.response?.data?.error || 'Something went wrong');
