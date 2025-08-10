@@ -110,11 +110,10 @@ Open your browser at [http://localhost:3000](http://localhost:3000)
 ## Author
 
 Tushar Patil
-[GitHub](https://github.com/TusharPatil843)
-[LinkedIn](https://www.linkedin.com/in/tusharpatil843/)
+*[GitHub](https://github.com/TusharPatil843)
+*[LinkedIn](https://www.linkedin.com/in/tusharpatil843/)
 
 ---
 
 Feel free to open issues or contribute!
-
-```
+---
