@@ -21,10 +21,10 @@ router.post('/shorten', async (req, res) => {
     // 2. Check if already exists in DB
     let existing = await Url.findOne({ originalUrl });
     if (existing) {
-      return res.json({
-        shortUrl: `${process.env.BASE_URL}/${existing.shortCode}`
-      });
-    }
+  return res.json({
+    shortCode: existing.shortCode  // send only shortCode here too
+  });
+}
 
     // 3. Generate unique short code
     const shortCode = nanoid(6); // 6 chars
@@ -38,8 +38,8 @@ router.post('/shorten', async (req, res) => {
 
     // 5. Respond with full short URL
     res.status(201).json({
-      shortUrl: `${process.env.BASE_URL}/${shortCode}`
-    });
+  shortCode: shortCode  // send only shortCode
+});
 
   } catch (err) {
     console.error('Error creating short URL:', err);
